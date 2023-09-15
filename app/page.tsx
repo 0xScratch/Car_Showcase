@@ -20,8 +20,8 @@ export default async function Home() {
           <SearchBar />
 
           <div className='home__filter-container'>
-            {/* <CustomFilter title="fuel" />
-            <CustomFilter title="year" /> */}
+            <CustomFilter title="fuel" />
+            <CustomFilter title="year" />
           </div>
         </div>
 
@@ -29,7 +29,7 @@ export default async function Home() {
           <section>
             <div className='home__cars-wrapper'>
               {allCars?.map((car) => (
-                <CarCard car={car}/>
+                <CarCard car={car} key={1}/>
               ))}
             </div>
           </section>
