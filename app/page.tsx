@@ -4,6 +4,7 @@ import { fetchCars } from '@/utils'
 import { Hero, SearchBar, CustomFilter, CarCard, ShowMore } from './components'
 import { fuels, yearsOfProduction } from '@/constants'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   const [allCars, setAllCars] = useState([])
